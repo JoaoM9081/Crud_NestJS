@@ -1,0 +1,28 @@
+### Criar Estudante (com nome da cidade)
+POST http://localhost:3000/estudantes
+Content-Type: application/json
+
+{
+  "nome": "João Silva",	
+  "matricula": "20250002",
+  "email": "joao@email.com",
+  "dataNascimento": "2002-06-11",
+  "nomeCidade": "Sorocaba"
+}
+
+### Listar todos os estudantes
+GET http://localhost:3000/estudantes
+
+### Buscar estudantes por ID
+GET http://localhost:3000/estudantes/1
+
+### Atualizar estudantes
+PATCH http://localhost:3000/estudantes/1
+Content-Type: application/json
+
+{
+  "nome": "Carlos Pereira"
+}
+
+### Deletar estudantes
+DELETE http://localhost:3000/estudantes/1

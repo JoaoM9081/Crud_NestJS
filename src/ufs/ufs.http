@@ -1,0 +1,25 @@
+### Criar UF
+POST http://localhost:3000/ufs
+Content-Type: application/json
+
+{
+  "sigla": "SP",
+  "nome": "São Paulo",
+}
+
+### Listar todas as ufs
+GET http://localhost:3000/ufs
+
+### Buscar ufs por ID
+GET http://localhost:3000/ufs/2
+
+### Atualizar ufs
+PATCH http://localhost:3000/ufs/1
+Content-Type: application/json
+
+{
+  "nome": "São Paulo"
+}
+
+### Deletar ufs
+DELETE http://localhost:3000/ufs/2

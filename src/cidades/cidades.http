@@ -1,0 +1,25 @@
+### Criar Cidade (com nome da UF)
+POST http://localhost:3000/cidades
+Content-Type: application/json
+
+{
+  "nome": "Sorocaba",
+  "nomeUf": "São Paulo"
+}
+
+### Listar todas as cidades
+GET http://localhost:3000/cidades
+
+### Buscar cidade por ID
+GET http://localhost:3000/cidades/1
+
+### Atualizar cidade
+PATCH http://localhost:3000/cidades/1
+Content-Type: application/json
+
+{
+  "nome": "Guarulhos"
+}
+
+### Deletar cidade
+DELETE http://localhost:3000/cidades/1
